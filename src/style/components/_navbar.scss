@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  min-height: 5rem;
+  background: #b4b6c0;
+  padding: 1rem;
+  position: fixed;
+
+  .logo {
+    font-size: 2rem;
+    padding-top: 0.3rem;
+
+    p {
+      float: left;
+      color: #4b4b4b;
+      text-transform: uppercase;
+    }
+  }
+
+  ul {
+    float: right;
+
+    li {
+      display: inline-block;
+      list-style: none;
+      justify-content: center;
+      text-align: center;
+      padding-right: 1rem;
+      padding-top: 0.7rem;
+      text-decoration: none;
+      color: #4b4b4b;
+
+      &:hover {
+        color: #000000;
+      }
+    }
+  }
+}

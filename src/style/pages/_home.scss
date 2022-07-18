@@ -1,0 +1,10 @@
+.home{
+    .headerimg {
+        background: url("../../../public/img/header.png") top center/cover;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;;
+    }
+}

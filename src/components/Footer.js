@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -45,6 +46,7 @@ const Footer = () => {
 
 
       <div className="footer_links">
+
             <ul className="firstlinks">
                 <li> <a href="/"> Conditions de vente </a> </li>
                 <li> <a href="/"> Politique de confidentialité </a> </li>
@@ -54,17 +56,18 @@ const Footer = () => {
             <br/>
 
             <ul className="secondlinks">
-                <li> <a href="/"> Nous contacter </a> </li>
-                <li> <a href="/"> FAQ </a> </li>
+                <NavLink to="/contact"> <li> Nous contacter </li> </NavLink>
+                <NavLink to="/faq"> <li> FAQ </li> </NavLink>
             </ul>
+            
         </div>
 
 
         <div class="pay">
             <ul>
-                <li><i className="fab fa-instagram"></i></li>
-                <li><i className="fab fa-instagram"></i></li>
-                <li><i className="fab fa-instagram"></i></li>
+                <li><i class="fa-brands fa-paypal"></i></li>
+                <li><i class="fa-brands fa-cc-mastercard"></i></li>
+                <li><i class="fa-brands fa-cc-visa"></i></li>
             </ul>
         </div>
 

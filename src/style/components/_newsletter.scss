@@ -1,0 +1,42 @@
+
+.newsletter {
+    color: #4B4B4B;
+    height: 50vh;
+    background-color: #B4B6C0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+
+h2 {
+    font-size: 30px;
+}
+
+.suscribe {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.email {
+    font-size: large;
+    padding: 0.5rem;
+    width: 25vw;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%);
+    margin-bottom: 1rem;
+}
+
+.emailbtn {
+    width: 250px;
+    background-color: #4B4B4B;
+    color: white;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    text-align: center;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%);
+}
+}

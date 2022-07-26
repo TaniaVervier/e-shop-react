@@ -7,18 +7,30 @@
 .navbar {
   width: 100%;
   min-height: 5rem;
-  background: #b4b6c0;
   padding: 1rem;
   position: fixed;
+  top: 0;
+  z-index: 999;
+  background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
+
+  &.scrolled {
+    background: #b4b6c0;
+  }
 
   .logo {
     font-size: 2rem;
     padding-top: 0.3rem;
 
-    p {
+    &
+
+    .an {
       float: left;
-      color: #4b4b4b;
+      color: #b4b6c0;
       text-transform: uppercase;
+      
+      &.scrolled{
+      color: #4b4b4b;
+    }
     }
   }
 
@@ -33,10 +45,15 @@
       padding-right: 1rem;
       padding-top: 0.7rem;
       text-decoration: none;
-      color: #4b4b4b;
+      color: #b4b6c0;
+      font-weight: bold;
 
       &:hover {
         color: #000000;
+      }
+
+      &.scrolled{
+        color: #4b4b4b;
       }
     }
   }

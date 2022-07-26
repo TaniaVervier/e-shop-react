@@ -1,0 +1,61 @@
+
+ h3 {
+    background: #B4B6C0;
+    text-align: center;
+    color: #4B4B4B;
+    font-weight: lighter;
+    padding-top: 2rem;
+ }
+
+ h4 {
+     color: white;
+     background-color: #B4B6C0;
+     padding-bottom: 0.5rem;
+ }
+
+ .favoris {
+    background: #B4B6C0;
+    text-align: center;
+    color: #4B4B4B;
+    padding-bottom: 2rem;
+ }
+
+.favorite {
+    background: #B4B6C0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 3rem;
+}
+
+.fav-pic {
+    width: 250px;
+}
+
+
+.fav-card {
+    width: 250px;
+    background-color: white;
+}
+
+.fav-card p {
+    padding-top: 0.8rem;
+    color: #4B4B4B;
+    padding-left: 0.5rem;
+}
+
+.fav-card .price {
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    color: #000000;
+    font-weight: bold;
+}
+
+button {
+    width: 250px;
+    background-color: #4B4B4B;
+    color: white;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    text-align: center;
+}

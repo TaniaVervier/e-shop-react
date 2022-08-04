@@ -6,9 +6,9 @@ const Favorites = () => {
   const img3 = new URL("../../public/img/valentino.jpg", import.meta.url);
 
   return (
-    <div className="favs">
+    <div className="favorites">
       <h3 className="fav-title">LES FAVORIS</h3>
-      <p className="favoris">_________</p>
+      <p className="border">_________</p>
 
       <div className="favorite">
         <div className="fav-card">

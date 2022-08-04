@@ -1,8 +1,58 @@
-.headerimg {
+.faq-page {
+  .headerimg {
     background: url("../../../public/img/header.png") top center/cover;
     height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;;
+    align-items: center;
+  }
+
+  .faq {
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    align-items: center;
+    text-align: left;
+
+    p {
+      font-size: 50px;
+      display: flex;
+      justify-content: center;
+      text-align: left;
+    }
+
+    .accordion {
+      width: 600px;
+    }
+
+    .accordion-title {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      cursor: pointer;
+      background-color: #b4b6c0;
+      border-bottom: solid #4b4b4b 1px;
+    }
+
+    .accordion-title,
+    .accordion-content {
+      padding: 1rem;
+    }
+
+    .accordion-content {
+      background-color: #e6e6e8;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    body {
+      font-size: 18px;
+    }
+
+    .accordion {
+      width: 90%;
+    }
+  }
 }

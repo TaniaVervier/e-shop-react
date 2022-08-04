@@ -1,66 +1,73 @@
 .form-container {
-  height: 90vh;
+  height: 100vh;
   max-width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 5% 10%;
 
-    .infos{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+  .infos {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: url("../../../public/img/contactpic.jpg") center/cover;
 
-        h3{
-            font-size: 1.5rem;
-            margin-bottom: 3%;
+    .info {
+      padding: 10% 10%;
+
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 3%;
+      }
+
+      p {
+        font-size: 1.3rem;
+        margin-bottom: 5%;
+      }
+    }
+  }
+
+  .contact {
+    padding: 10% 10%;
+    .contact-title {
+      text-align: left;
+      font-size: 2rem;
+      color: #4b4b4b;
+      margin-bottom: 50px;
+    }
+
+    .form {
+      .form-content {
+        display: grid;
+
+        .input,
+        textarea,
+        .message {
+          background: none;
+          font-size: 1rem;
+          border-radius: 5px;
+          border: solid black 1px;
         }
-
-        p {
-            font-size: 1.3rem;
-            margin-bottom: 5%;
+        input {
+          padding: 10px 6px;
+          margin-bottom: 30px;
         }
+      }
+      textarea {
+        resize: none;
+        padding: 6px 0;
+        height: 70px;
+      }
+
+      input.button {
+        width: 150px;
+        background-color: #4b4b4b;
+        color: white;
+        text-transform: uppercase;
+        padding: 0.5rem;
+        text-align: center;
+        border-radius: 0%;
+        margin-top: 2rem;
+        font-weight: bold;
+      }
     }
-
-  .contact-title {
-    text-align: left;
-    font-size: 2rem;
-    color: #4b4b4b;
-    margin-bottom: 50px;
-  }
-
-  .form-content {
-    display: grid;
-
-    .input,
-    textarea,
-    .message {
-      background: none;
-      font-size: 1rem;
-      border-radius: 5px;
-      border: solid black 1px
-    }
-    input {
-      padding: 10px 6px;
-      margin-bottom: 30px;
-    }
-  }
-  textarea {
-    resize: none;
-    padding: 6px 0;
-    height: 70px;
-  }
-
-  input.button {
-    width: 150px;
-    background-color: #4b4b4b;
-    color: white;
-    text-transform: uppercase;
-    padding: 0.5rem;
-    text-align: center;
-    margin-left: 50%;
-    margin-right: 50%;
-    transform: translate(-50%);
-    margin-top: 5%;
-    border-radius: 0%;
   }
 }

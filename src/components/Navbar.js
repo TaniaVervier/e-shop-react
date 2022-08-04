@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-
   const [show, setShow] = useState(false);
 
   useEffect(() => {
@@ -11,9 +10,8 @@ const Navbar = () => {
   }, []);
 
   const handleScroll = () => {
-    setShow(window.pageYOffset > 140);
+    setShow(window.pageYOffset > 50);
   };
-
 
   return (
     <div className={show ? "navbar scrolled" : "navbar"}>

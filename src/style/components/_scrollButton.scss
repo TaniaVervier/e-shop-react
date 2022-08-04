@@ -1,0 +1,18 @@
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 30px;
+  background: #4b4b4b;
+  color: white;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 5px 10px #ccc;
+
+    &:hover {
+    background: #b4b6c0;
+  }
+}

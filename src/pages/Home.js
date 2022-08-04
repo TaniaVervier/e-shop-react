@@ -3,15 +3,18 @@ import Favorites from "../components/Favorites";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
+import ScrollButton from './../components/ScrollButton';
+
 
 const Home = () => {
   const img = new URL("../../public/img/apropos.png", import.meta.url);
+
 
   return (
     <div>
       <div className="home">
         <Navbar />
-
+        <ScrollButton />
         <div className="headerimg"></div>
         <Favorites />
         <div className="wrapper">
@@ -28,7 +31,6 @@ const Home = () => {
             <div className="button">
               <button className="aboutbtn">LIRE LA SUITE</button>
             </div>
-            
           </div>
 
           <div>

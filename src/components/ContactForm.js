@@ -4,11 +4,13 @@ const ContactForm = () => {
   return (
     <div className="form-container">
       <div className="infos">
-        <h3> Téléphone </h3>
-        <p> 02 374 74 74 </p>
+        <div className="info">
+          <h3 className="tel"> Téléphone </h3>
+          <p> 02 374 74 74 </p>
 
-        <h3> Email </h3>
-        <p> info@nepetas.be </p>
+          <h3> Email </h3>
+          <p> info@nepetas.be </p>
+        </div>
       </div>
 
       <div className="contact">
@@ -35,7 +37,7 @@ const ContactForm = () => {
             />
             <label>Message</label>
             <textarea name="message" id="mess" />
-            <input type="submit" value="Envoyer" className="hover button" />
+            <input type="submit" value="Envoyer" className="button" />
           </form>
         </div>
       </div>

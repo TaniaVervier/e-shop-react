@@ -1,62 +1,46 @@
-.favorites {
-    
-  .fav-title {
-    background: #b4b6c0;
-    text-align: center;
-    color: #4b4b4b;
-    font-weight: lighter;
-    padding-top: 2rem;
-  }
+.favorite {
+  background: #b4b6c0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 3rem;
 
-  .border {
-    background: #b4b6c0;
-    text-align: center;
-    color: #4b4b4b;
-    padding-bottom: 2rem;
-  }
 
-  .favorite {
-    background: #b4b6c0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-bottom: 3rem;
+  .fav-card {
+    width: 250px;
+    background-color: white;
+    border-radius: 5%;
 
-    .fav-card {
+    h4 {
+      color: white;
+      background-color: #b4b6c0;
+      padding-bottom: 0.5rem;
+    }
+
+    .fav-pic {
       width: 250px;
-      background-color: white;
+    }
 
-      h4 {
-        color: white;
-        background-color: #b4b6c0;
-        padding-bottom: 0.5rem;
-      }
+    p {
+      padding-top: 0.8rem;
+      color: #4b4b4b;
+      padding-left: 0.5rem;
+    }
 
-      .fav-pic {
-        width: 250px;
-      }
+    .price {
+      padding-top: 2rem;
+      padding-bottom: 0.5rem;
+      color: #000000;
+      font-weight: bold;
+    }
 
-      p {
-        padding-top: 0.8rem;
-        color: #4b4b4b;
-        padding-left: 0.5rem;
-      }
-
-      .price {
-        padding-top: 2rem;
-        padding-bottom: 0.5rem;
-        color: #000000;
-        font-weight: bold;
-      }
-
-      button {
-        width: 250px;
-        background-color: #4b4b4b;
-        color: white;
-        text-transform: uppercase;
-        padding: 0.5rem;
-        text-align: center;
-      }
+    button {
+      width: 250px;
+      background-color: #4b4b4b;
+      color: white;
+      text-transform: uppercase;
+      padding: 0.5rem;
+      text-align: center;
     }
   }
 }

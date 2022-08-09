@@ -1,14 +1,13 @@
 import React from "react";
 import Favorites from "../components/Favorites";
+import { productsData } from "./../data/productsData";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
-import ScrollButton from './../components/ScrollButton';
-
+import ScrollButton from "./../components/ScrollButton";
 
 const Home = () => {
   const img = new URL("../../public/img/apropos.png", import.meta.url);
-
 
   return (
     <div>
@@ -16,7 +15,23 @@ const Home = () => {
         <Navbar />
         <ScrollButton />
         <div className="headerimg"></div>
-        <Favorites />
+
+        <div className="favorites">
+          <h3 className="fav-title">LES FAVORIS</h3>
+          <p className="border">_________</p>
+          <div className="fav">
+            {productsData.map(({ title, img, infos, details, price }) => (
+              <Favorites
+                title={title}
+                img={img}
+                infos={infos}
+                details={details}
+                price={price}
+              />
+            ))}</div>
+        </div>
+
+
         <div className="wrapper">
           <div className="about">
             <h2>A PROPOS</h2>
